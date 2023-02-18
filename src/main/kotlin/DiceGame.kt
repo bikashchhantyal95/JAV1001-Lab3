@@ -44,7 +44,22 @@ class DiceGame{
     println("\nSetting the d${d2.numberOfSides} to show ${d2.currentSide}...")
     println("The sid up is now ${d2.currentSide}.")
 
-
-
+    var dices = mutableListOf<Die>()
+     var count = 5
+     for(i in 1..count){
+         dices.add((Die()))
+     }
+    println(dices)
+     var rollTime = 0
+     while (true){
+         rollTime += 1
+         for(dice in dices){
+             dice.roll()
+         }
+         if(dices.all{it.currentSide == dices[0].currentSide}){
+            println("YAHTZEE! It took ${rollTime} rolls")
+             break
+         }
+     }
  }
 }

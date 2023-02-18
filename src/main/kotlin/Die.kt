@@ -25,4 +25,5 @@ class Die{
     fun roll():Unit{
         this.currentSide = Random.nextInt( 1, numberOfSides +1)
     }
+
 }
