@@ -1,4 +1,9 @@
 
+// Bikash Chhantyal
+// A00265470
+// JAV 1001
+// App Development for Android
+
 import Die
 fun main(){
 var newGame = DiceGame()
